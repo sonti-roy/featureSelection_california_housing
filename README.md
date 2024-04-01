@@ -43,7 +43,7 @@ It can be downloaded/loaded using the sklearn.datasets.fetch_california_housing 
   
 ## Supervised feature selection
 
-### Evaluating mutual info regression method for feature selection
+### 1. Evaluating mutual info regression method for feature selection
 
 [Mutual information (MI)](https://scikit-learn.org/stable/modules/generated/sklearn.feature_selection.mutual_info_regression.html) between two random variables is a non-negative value, which measures the dependency between the variables. It is equal to zero if and only if two random variables are independent, and higher values mean higher dependency.
 
@@ -60,7 +60,11 @@ Top 60% of the features were selected and evaluated for it accuracy with all fea
 
 
 
-## Model fitting and evaluation
+### 2. Selecting features using f_regression
+
+[f_regression](https://scikit-learn.org/stable/modules/generated/sklearn.feature_selection.f_regression.html) uses univariate linear regression tests returning F-statistic and p-values.
+
+![alt text](https://github.com/sonti-roy/featureSelection_california_housing/blob/main/plots/mutual_info_regression_comparasion.png)
 
 1. *Multiple models were evaluated for their performance and compared the R2 and MSE for the models to select the best model.*
    
