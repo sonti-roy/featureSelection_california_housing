@@ -159,7 +159,7 @@ Around 7 regression model was evaluated on the original dataset set and all the 
 **Fig-5: MSE comparison for all the models on different subset of data generated through feature selection.**
 
 
-Table - Top 10 model with different dataset.
+**Table - Top 10 model with different dataset.**
 
 | data_subset            | r2                       | mse                      | model                   |
 |------------------------|--------------------------|--------------------------|-------------------------|
