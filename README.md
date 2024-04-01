@@ -130,16 +130,16 @@ RidgeCV estimator is being used for this and selected 6 best features.
 
 ## Unsupervised feature selection
 
-    ### 1. Principal component analysis
+### 1. Principal component analysis
 
-        [PCA](https://en.wikipedia.org/wiki/Principal_component_analysis) is defined as an orthogonal linear transformation on a real inner product space            that transforms the data to a new coordinate system such that the greatest variance by some scalar projection of the data comes to lie on the               first coordinate (called the first principal component), the second greatest variance on the second coordinate, and so on.
+[PCA](https://en.wikipedia.org/wiki/Principal_component_analysis) is defined as an orthogonal linear transformation on a real inner product space           that transforms the data to a new coordinate system such that the greatest variance by some scalar projection of the data comes to lie on the               first coordinate (called the first principal component), the second greatest variance on the second coordinate, and so on.
         
-        7 component were selected for the transformed space and evalauated it using Linear Regression. 7 was acheived by running at different value and             accessing the score.
+7 component were selected for the transformed space and evalauated it using Linear Regression. 7 was acheived by running at different value and             accessing the score.
         
-        | Dataset                    | R2       | MSE      |
-        |----------------------------|----------|----------|
-        | Original                   | 0.575787706032451| 0.5558915986952441 |
-        | subset                     | 0.5059804263462322 | 0.6473676847426387 |
+| Dataset                    | R2       | MSE      |
+|----------------------------|----------|----------|
+| Original                   | 0.575787706032451| 0.5558915986952441 |
+| subset                     | 0.5059804263462322 | 0.6473676847426387 |
 
 
 ## Evaluate different model on the subset of x by multiple models
