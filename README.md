@@ -80,7 +80,7 @@ As the range was highly variable for different features. Top 4 features were sel
 
 [Pearson correlation](https://en.wikipedia.org/wiki/Pearson_correlation_coefficient) is a correlation coefficient that measures linear correlation between two sets of data. It is the ratio between the covariance of two variables and the product of their standard deviations.
 
-![alt text](https://github.com/sonti-roy/featureSelection_california_housing/blob/main/plots/f_regression_comparasion.png)
+![alt text](https://github.com/sonti-roy/featureSelection_california_housing/blob/main/plots/correlation_plot.png)
 
 
 
