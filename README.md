@@ -5,6 +5,7 @@
 
 # Feature Selection using supervised and unsupervised method and model development on california housing dataset
 
+This repository contains code for data processing, feature selection and multiple model fitting and evaluation using california housing dataset. Feature selection was performed using supervised and unsupervised methods to achieve higher accuracy. Multiple regression models were evaluated and top 10 are listed in the results.
 
 ## Implementation Details
 
