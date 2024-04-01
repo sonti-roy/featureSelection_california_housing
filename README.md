@@ -45,7 +45,7 @@ It can be downloaded/loaded using the sklearn.datasets.fetch_california_housing 
 
 ### Evaluating mutual info regression method for feature selection
 
-Mutual information (MI) between two random variables is a non-negative value, which measures the dependency between the variables. It is equal to zero if and only if two random variables are independent, and higher values mean higher dependency.[Mutual info reference](https://scikit-learn.org/stable/modules/generated/sklearn.feature_selection.mutual_info_regression.html)
+Mutual information (MI) between two random variables is a non-negative value, which measures the dependency between the variables. It is equal to zero if and only if two random variables are independent, and higher values mean higher dependency.[Reference](https://scikit-learn.org/stable/modules/generated/sklearn.feature_selection.mutual_info_regression.html)
 
 ![alt text](https://github.com/sonti-roy/featureSelection_california_housing/blob/main/plots/mutual_info_regression_comparasion.png)
 
