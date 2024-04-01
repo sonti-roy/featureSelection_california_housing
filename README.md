@@ -92,6 +92,8 @@ As the range was highly variable for different features. Top 4 features were sel
 
 ![alt text](https://github.com/sonti-roy/featureSelection_california_housing/blob/main/plots/correlation_plot.png)
 
+Fig-3: Pearson correlation coefficient for all the pairwise combinations of features.
+
 Longitude and latitude, AveRooms and AveBedrms are highly correlated with -0.92 and 0.85 coeffiecient respectively. For removal of any one feature from the combination variance was analysed for the 4 features.
 
 | Features                   | Variance |
@@ -148,11 +150,13 @@ RidgeCV estimator is being used for this and selected 6 best features.
 
 Around 7 regression model was evaluated on the original dataset set and all the subset dataset and compared their metrics to find the best model with high accuracy.
 
-R2 comparasion for all the model on different subset of data generated through feature selection.
 ![alt text](https://github.com/sonti-roy/featureSelection_california_housing/blob/main/plots/r2_comparasion_plot.png)
 
-MSE comparasion for all the model on different subset of data generated through feature selection.
+Fig-4: R2 comparasion for all the model on different subset of data generated through feature selection.
+
 ![alt text](https://github.com/sonti-roy/featureSelection_california_housing/blob/main/plots/mse_comparasion_plot.png)
+
+Fig-5: MSE comparasion for all the models on different subset of data generated through feature selection.
 
 
 | data_subset            | r2                       | mse                      | model                   |
