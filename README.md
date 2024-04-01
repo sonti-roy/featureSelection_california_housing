@@ -9,13 +9,13 @@
 - Dataset: California Housing Dataset (view below for more details)
 - Feature selection methods:
     - Supervised feature selection
-        - mutual info regression
-        - f_regression
-        - Pearson Correlation
-        - Recurive Feature Elimination (RFE) with Lasso
-        - Sequential Feature Selection with RedgeCV
+        - [mutual info regression](https://scikit-learn.org/stable/modules/generated/sklearn.feature_selection.mutual_info_regression.html)
+        - [f_regression](https://scikit-learn.org/stable/modules/generated/sklearn.feature_selection.f_regression.html)
+        - [Pearson Correlation](https://scikit-learn.org/stable/modules/generated/sklearn.feature_selection.r_regression.html)
+        - [Recurive Feature Elimination (RFE)](https://scikit-learn.org/stable/modules/generated/sklearn.feature_selection.RFE.html) with [Lasso](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Lasso.html)
+        - [Sequential Feature Selection](https://scikit-learn.org/stable/modules/generated/sklearn.feature_selection.SequentialFeatureSelector.html) with [RidgeCV](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.RidgeCV.html)
      - Unsupervised feature selection
-         - Principal component analysis
+         - [Principal component analysis](https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.PCA.html)
 - Model evaluated: 
   - [Linear Regressor](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html)
   - [KNeighborsRegression](https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsRegressor.html)
