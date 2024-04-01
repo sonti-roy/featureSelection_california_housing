@@ -98,12 +98,53 @@ Based on the variance data, longitude and AveBedrms are removed manually and eva
 | Original                   | 0.575787706032451| 0.5558915986952441 |
 | subset                     | 0.5059804263462322 | 0.6473676847426387 |
 
+### 4. Recurive Feature Elimination (RFE)
 
-1. *Multiple models were evaluated for their performance and compared the R2 and MSE for the models to select the best model.*
-   
-![alt text](https://github.com/sonti-roy/california_housing/blob/main/plots/model_performance.png)
+[Recursive feature elimination (RFE)](https://scikit-learn.org/stable/modules/generated/sklearn.feature_selection.RFE.html) is to select features by recursively considering smaller and smaller sets of features. First, the estimator is trained on the initial set of features and the importance of each feature is obtained either through any specific attribute or callable. Then, the least important features are pruned from current set of features. That procedure is recursively repeated on the pruned set until the desired number of features to select is eventually reached.
 
-1. *The performance of GradientBoostingRegressor model was found to be the highest with very low MSEerror compared to other models that are evaluated.*
+Estimator/model used is Lasso as it inheriently do feature selection and subset the dataset and evaluated uisng linear regression model.
+
+| Dataset                    | R2       | MSE      |
+|----------------------------|----------|----------|
+| Original                   | 0.575787706032451| 0.5558915986952441 |
+| subset                     | 0.5059804263462322 | 0.6473676847426387 |
+
+### 5. Sequential Feature Selection
+
+[Sequential Feature Selector](https://scikit-learn.org/stable/modules/generated/sklearn.feature_selection.SequentialFeatureSelector.html) adds (forward selection) or removes (backward selection) features to form a feature subset in a greedy fashion. At each stage, this estimator chooses the best feature to add or remove based on the cross-validation score of an estimator. In the case of unsupervised learning, this Sequential Feature Selector looks only at the features (X), not the desired outputs (y).
+
+RidgeCV estimator is being used for this and selected 6 best features.
+
+| Dataset                    | R2       | MSE      |
+|----------------------------|----------|----------|
+| Original                   | 0.575787706032451| 0.5558915986952441 |
+| subset                     | 0.5059804263462322 | 0.6473676847426387 |
+
+## Unsupervised feature selection
+
+### 1. Principal component analysis
+
+[PCA](https://en.wikipedia.org/wiki/Principal_component_analysis) is defined as an orthogonal linear transformation on a real inner product space that transforms the data to a new coordinate system such that the greatest variance by some scalar projection of the data comes to lie on the first coordinate (called the first principal component), the second greatest variance on the second coordinate, and so on.
+
+7 component were selected for the transformed space and evalauated it using Linear Regression. 7 was acheived by running at different value and accessing the score.
+
+| Dataset                    | R2       | MSE      |
+|----------------------------|----------|----------|
+| Original                   | 0.575787706032451| 0.5558915986952441 |
+| subset                     | 0.5059804263462322 | 0.6473676847426387 |
+
+
+## Evaluate different model on the subset of x by multiple models
+
+Around 7 regression model was evaluated on the original dataset set and all the subset dataset and compared their metrics to find the best model with high accuracy.
+
+R2 comparasion for all the model on different subset of data generated through feature selection.
+![alt text](https://github.com/sonti-roy/featureSelection_california_housing/blob/main/plots/r2_comparasion_plot.png)
+
+MSE comparasion for all the model on different subset of data generated through feature selection.
+![alt text](https://github.com/sonti-roy/featureSelection_california_housing/blob/main/plots/mse_comparasion_plot.png)
+
+
 
 | Model                     | R2        | MSE      |
 |----------------------------|----------|----------|
@@ -114,28 +155,6 @@ Based on the variance data, longitude and AveBedrms are removed manually and eva
 | BayesianRidge              | 0.582681 | 0.416051 |
 | DecisionTreeRegressor      | 0.585701 | 0.413039 |
 | GradientBoostingRegressor  | 0.772826 | 0.226484 |
-
-3. *Model prediction comparasion with true values*
-
-![alt text](https://github.com/sonti-roy/california_housing/blob/main/plots/true_vs_prediction.png)
-
-*Inference - shows a good colinearity which is also visible from the score.*
-
-## Cross valadation
-
-*To evaluate the **<u>GradientBoostingRegressor</u>** model further and check for over fitting, cross valadation is performed.*
-
-1. *Cross validation of the model with complete dataset with cv = 5 shows reduced score than thge model*
-        
-| Score 1      | Score 2      | Score 3      | Score 4      | Score 5      |
-|--------------|--------------|--------------|--------------|--------------|
-| 0.62413216   | 0.6943188    | 0.71206383   | 0.65481236   | 0.67672756   |
-
-2. *Cross validation of the model with split dataset shows similar accuracy as the fitted model.*
-
-| Score 1      | Score 2      | Score 3      | Score 4      | Score 5      |
-|--------------|--------------|--------------|--------------|--------------|
-| 0.78189507   | 0.78282526   | 0.78389246   | 0.80503452   | 0.80055348   |
 
 *Inference - The model need further tuning to match the score in both the scanerio.*
 
@@ -149,7 +168,6 @@ Based on the variance data, longitude and AveBedrms are removed manually and eva
 *The code is is avaiable in a python notebook **<u>model.ipynb</u>**. To view the code please click below*
 
 [*Click here*](https://github.com/sonti-roy/california_housing/blob/main/model.ipynb)
-
 
 ## Roadmap
 
