@@ -59,7 +59,7 @@ It can be downloaded/loaded using the sklearn.datasets.fetch_california_housing 
 
 ![alt text](https://github.com/sonti-roy/featureSelection_california_housing/blob/main/plots/mutual_info_regression_comparasion.png)
 
-Fig - 1 - The plot show the dependency of target on each feature. 
+**Fig - 1 - The plot show the dependency of target on each feature.**
 
 Top 60% of the features were selected and evaluated for it accuracy with all features dataset using Linear regression.
 
@@ -76,7 +76,7 @@ Top 60% of the features were selected and evaluated for it accuracy with all fea
 
 ![alt text](https://github.com/sonti-roy/featureSelection_california_housing/blob/main/plots/f_regression_comparasion.png)
 
-Fig-2: Plot for F ststistics for all feature against the target.
+**Fig-2: Plot for F ststistics for all feature against the target.**
 
 As the range was highly variable for different features. Top 4 features were selected out of total 8 features and subset data was generated. The score was compared for original and subset dataset.
 
@@ -92,7 +92,7 @@ As the range was highly variable for different features. Top 4 features were sel
 
 ![alt text](https://github.com/sonti-roy/featureSelection_california_housing/blob/main/plots/correlation_plot.png)
 
-Fig-3: Pearson correlation coefficient for all the pairwise combinations of features.
+**Fig-3: Pearson correlation coefficient for all the pairwise combinations of features.**
 
 Longitude and latitude, AveRooms and AveBedrms are highly correlated with -0.92 and 0.85 coeffiecient respectively. For removal of any one feature from the combination variance was analysed for the 4 features.
 
@@ -152,11 +152,11 @@ Around 7 regression model was evaluated on the original dataset set and all the 
 
 ![alt text](https://github.com/sonti-roy/featureSelection_california_housing/blob/main/plots/r2_comparasion_plot.png)
 
-Fig-4: R2 comparasion for all the model on different subset of data generated through feature selection.
+**Fig-4: R2 comparasion for all the model on different subset of data generated through feature selection.**
 
 ![alt text](https://github.com/sonti-roy/featureSelection_california_housing/blob/main/plots/mse_comparasion_plot.png)
 
-Fig-5: MSE comparasion for all the models on different subset of data generated through feature selection.
+**Fig-5: MSE comparison for all the models on different subset of data generated through feature selection.**
 
 
 | data_subset            | r2                       | mse                      | model                   |
