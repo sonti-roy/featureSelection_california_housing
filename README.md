@@ -153,22 +153,27 @@ MSE comparasion for all the model on different subset of data generated through 
 ![alt text](https://github.com/sonti-roy/featureSelection_california_housing/blob/main/plots/mse_comparasion_plot.png)
 
 
+| data_subset            | r2                       | mse                      | model                   |
+|------------------------|--------------------------|--------------------------|-------------------------|
+| original               | 0.776                    | 0.294                    | GradientBoostingRegressor |
+| mutual_info_regression | 0.773                    | 0.297                    | GradientBoostingRegressor |
+| RFE                    | 0.750                    | 0.328                    | GradientBoostingRegressor |
+| mutual_info_regression | 0.750                    | 0.328                    | KNeighborsRegression      |
+| PCA                    | 0.713                    | 0.376                    | GradientBoostingRegressor |
+| subset                 | 0.706                    | 0.386                    | GradientBoostingRegressor |
+| SFS                    | 0.671                    | 0.431                    | GradientBoostingRegressor |
+| RFE                    | 0.667                    | 0.436                    | DecisionTreeRegressor     |
+| mutual_info_regression | 0.660                    | 0.445                    | DecisionTreeRegressor     |
+| original               | 0.631                    | 0.484                    | DecisionTreeRegressor     |
 
-| Model                     | R2        | MSE      |
-|----------------------------|----------|----------|
-| SVR                        | -0.020689| 1.017586 |
-| LinearRegression           | 0.582674 | 0.416057 |
-| KNeighborsRegression       | 0.136115 | 0.861259 |
-| SGDRegressor               | 0.001655 | 0.995310 |
-| BayesianRidge              | 0.582681 | 0.416051 |
-| DecisionTreeRegressor      | 0.585701 | 0.413039 |
-| GradientBoostingRegressor  | 0.772826 | 0.226484 |
 
-*Inference - The model need further tuning to match the score in both the scanerio.*
+Table - Top 10 model with different dataset.
+
+*Inference - GradientBoostingRegressor performed the best with the original dataset i.e without any feature selection and the top 2nd model is also GradientBoostingRegressor with mutual_info_regression feature selection.*
 
 ## Key Takeaways
 
-*How to perform a basic ML model fitting and evaluate the performance of the model.*
+*How to perform feature selection using variuous method and perform ML model fitting and evaluate the performance of the model.*
 
 
 ## Code 
@@ -179,10 +184,9 @@ MSE comparasion for all the model on different subset of data generated through 
 
 ## Roadmap
 
-1. *Model Exploration*
-2. *Model Optimization*
-3. *Hyperparameter Tuning*
-4. *Exploring Other Ways to Improve Model*
+1. *Feature engineering could be explored to further improve the model accuracy*
+2. *Hyperparameter Tuning*
+3. *Exploring Other Ways to Improve Model*
 
 ## Libraries 
 
