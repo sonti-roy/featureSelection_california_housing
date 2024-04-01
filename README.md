@@ -63,7 +63,7 @@ Top 60% of the features were selected and evaluated for it accuracy with all fea
 
 | Dataset                    | R2       | MSE      |
 |----------------------------|----------|----------|
-| Original                   | 0.5827018886341137| 0.5468311917368283 |
+| Original                   | 0.575787706032451| 0.5558915986952441 |
 | Subset                     | 0.5732648513884984 | 0.5591975700714763 |
 
 
@@ -80,8 +80,8 @@ As the range was highly variable for different features. Top 4 features were sel
 
 | Dataset                    | R2       | MSE      |
 |----------------------------|----------|----------|
-| Original                   | 0.5827018886341137| 0.5468311917368283 |
-| subset                     | 0.5732648513884984 | 0.5591975700714763 |
+| Original                   | 0.575787706032451| 0.5558915986952441 |
+| subset                     | 0.5043169272470043 | 0.6495475488975627 |
 
 
 ### 3. Pearson Correlation - feature selection
@@ -115,7 +115,7 @@ Estimator/model used is Lasso as it inheriently do feature selection and subset 
 | Dataset                    | R2       | MSE      |
 |----------------------------|----------|----------|
 | Original                   | 0.575787706032451| 0.5558915986952441 |
-| subset                     | 0.5059804263462322 | 0.6473676847426387 |
+| subset                     | 0.58111575601825 | 0.5489096741573366 |
 
 ### 5. Sequential Feature Selection
 
@@ -126,7 +126,7 @@ RidgeCV estimator is being used for this and selected 6 best features.
 | Dataset                    | R2       | MSE      |
 |----------------------------|----------|----------|
 | Original                   | 0.575787706032451| 0.5558915986952441 |
-| subset                     | 0.5059804263462322 | 0.6473676847426387 |
+| subset                     | 0.5099337366296423 | 0.6421872314534861 |
 
 ## Unsupervised feature selection
 
@@ -139,7 +139,7 @@ RidgeCV estimator is being used for this and selected 6 best features.
 | Dataset                    | R2       | MSE      |
 |----------------------------|----------|----------|
 | Original                   | 0.575787706032451| 0.5558915986952441 |
-| subset                     | 0.5059804263462322 | 0.6473676847426387 |
+| subset                     | 0.5827018886341137 | 0.5468311917368283 |
 
 
 ## Evaluate different model on the subset of x by multiple models
