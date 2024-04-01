@@ -144,7 +144,7 @@ RidgeCV estimator is being used for this and selected 6 best features.
 | subset                     | 0.5827018886341137 | 0.5468311917368283 |
 
 
-## Evaluate different model on the subset of x by multiple models
+## Evaluate different model on the subset of x 
 
 Around 7 regression model was evaluated on the original dataset set and all the subset dataset and compared their metrics to find the best model with high accuracy.
 
