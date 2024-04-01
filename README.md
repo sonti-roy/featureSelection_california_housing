@@ -59,7 +59,7 @@ It can be downloaded/loaded using the sklearn.datasets.fetch_california_housing 
 
 ![alt text](https://github.com/sonti-roy/featureSelection_california_housing/blob/main/plots/mutual_info_regression_comparasion.png)
 
-**Fig - 1 - The plot show the dependency of target on each feature.**
+**Fig-1: The plot shows the dependency of the target on each feature.**
 
 Top 60% of the features were selected and evaluated for it accuracy with all features dataset using Linear regression.
 
