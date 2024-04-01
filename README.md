@@ -1,6 +1,6 @@
 <div align="left">
 
-[![MIT](https://img.shields.io/badge/Licence-MIT%20-%20green?style=flat)](https://pypi.org/project/cookiecutter/)
+[![MIT](https://img.shields.io/badge/Licence-MIT%20-%20green?style=flat)](https://github.com/sonti-roy/featureSelection_california_housing/blob/main/LICENSE)
 
 
 # Feature Selection using supervised and unsupervised method and model development on california housing dataset
