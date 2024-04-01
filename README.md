@@ -56,7 +56,7 @@ Top 60% of the features were selected and evaluated for it accuracy with all fea
 | Dataset                    | R2       | MSE      |
 |----------------------------|----------|----------|
 | Original                   | 0.5827018886341137| 0.5468311917368283 |
-| subset                     | 0.5732648513884984 | 0.5591975700714763 |
+| Subset                     | 0.5732648513884984 | 0.5591975700714763 |
 
 
 
@@ -64,7 +64,21 @@ Top 60% of the features were selected and evaluated for it accuracy with all fea
 
 [f_regression](https://scikit-learn.org/stable/modules/generated/sklearn.feature_selection.f_regression.html) uses univariate linear regression tests returning F-statistic and p-values.
 
-![alt text](https://github.com/sonti-roy/featureSelection_california_housing/blob/main/plots/mutual_info_regression_comparasion.png)
+![alt text](https://github.com/sonti-roy/featureSelection_california_housing/blob/main/plots/f_regression_comparasion.png)
+
+Fig-2: Plot for F ststistics for all feature against the target.
+
+As the range was highly variable for different features. Top 4 features were selected out of total 8 features and subset data was generated. The score was compared for original and subset dataset.
+
+| Dataset                    | R2       | MSE      |
+|----------------------------|----------|----------|
+| Original                   | 0.5827018886341137| 0.5468311917368283 |
+| subset                     | 0.5732648513884984 | 0.5591975700714763 |
+
+
+
+
+
 
 1. *Multiple models were evaluated for their performance and compared the R2 and MSE for the models to select the best model.*
    
