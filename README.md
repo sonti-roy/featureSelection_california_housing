@@ -159,6 +159,8 @@ Around 7 regression model was evaluated on the original dataset set and all the 
 **Fig-5: MSE comparison for all the models on different subset of data generated through feature selection.**
 
 
+Table - Top 10 model with different dataset.
+
 | data_subset            | r2                       | mse                      | model                   |
 |------------------------|--------------------------|--------------------------|-------------------------|
 | original               | 0.776                    | 0.294                    | GradientBoostingRegressor |
@@ -172,8 +174,6 @@ Around 7 regression model was evaluated on the original dataset set and all the 
 | mutual_info_regression | 0.660                    | 0.445                    | DecisionTreeRegressor     |
 | original               | 0.631                    | 0.484                    | DecisionTreeRegressor     |
 
-
-Table - Top 10 model with different dataset.
 
 *Inference - GradientBoostingRegressor performed the best with the original dataset i.e without any feature selection and the top 2nd model is also GradientBoostingRegressor with mutual_info_regression feature selection.*
 
