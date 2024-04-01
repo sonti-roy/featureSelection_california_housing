@@ -8,6 +8,15 @@
 ## Implementation Details
 
 - Dataset: California Housing Dataset (view below for more details)
+- Feature selection methods:
+    - Supervised feature selection
+        - mutual info regression
+        - f_regression
+        - Pearson Correlation
+        - Recurive Feature Elimination (RFE) with Lasso
+        - Sequential Feature Selection with RedgeCV
+     - Unsupervised feature selection
+         - Principal component analysis
 - Model evaluated: 
   - [Linear Regressor](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html)
   - [KNeighborsRegression](https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsRegressor.html)
