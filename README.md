@@ -2,7 +2,7 @@
 
 
 # Project Title
-**Machine learning model development for predicting house price in california**
+**Feature Selection using supervised and unsupervised method and model development on california housing dataset**
 
 
 ## Implementation Details
@@ -40,14 +40,16 @@ It can be downloaded/loaded using the sklearn.datasets.fetch_california_housing 
     - Latitude block group latitude
     - Longitude block group longitude
 - Target: Median house value for California districts, expressed in hundreds of thousands of dollars ($100,000)
-## Exploratory data analysis
+  
+## Supervised feature selection
 
-1. *Correlation between features were carried out to see if highly correlated features are there, so that redundancy could be removed from the features.* 
+### Evaluating mutual info regression method for feature selection
 
-![alt text](https://github.com/sonti-roy/california_housing/blob/main/plots/correlation.png)
+Mutual information (MI) between two random variables is a non-negative value, which measures the dependency between the variables. It is equal to zero if and only if two random variables are independent, and higher values mean higher dependency.[ref](https://scikit-learn.org/stable/modules/generated/sklearn.feature_selection.mutual_info_regression.html)
 
-2. *Correlation shows longitude and latitude are highly correlated and one could be removed from the features list.*
-![alt text](https://github.com/sonti-roy/california_housing/blob/main/plots/latitude_longitude_scatter_plot.png)
+![alt text](https://github.com/sonti-roy/featureSelection_california_housing/blob/main/plots/mutual_info_regression_comparasion.png)
+
+Fig - The plot show the dependency of target on each feature. 
 
 ## Model fitting and evaluation
 
