@@ -82,6 +82,21 @@ As the range was highly variable for different features. Top 4 features were sel
 
 ![alt text](https://github.com/sonti-roy/featureSelection_california_housing/blob/main/plots/correlation_plot.png)
 
+Longitude and latitude, AveRooms and AveBedrms are highly correlated with -0.92 and 0.85 coeffiecient respectively. For removal of any one feature from the combination variance was analysed for the 4 features.
+
+| Features                   | Variance |
+|----------------------------|----------|
+| Longitude                  | 4.014139367081251| 
+| Latitude                   | 4.562292644202798 | 
+| AveRooms                   | 6.12153272384879 | 
+| AveBedrms                  | 0.2245915001886127 | 
+
+Based on the variance data, longitude and AveBedrms are removed manually and evaluated the model on original and subset dataset using linear regression.
+
+| Dataset                    | R2       | MSE      |
+|----------------------------|----------|----------|
+| Original                   | 0.575787706032451| 0.5558915986952441 |
+| subset                     | 0.5059804263462322 | 0.6473676847426387 |
 
 
 1. *Multiple models were evaluated for their performance and compared the R2 and MSE for the models to select the best model.*
