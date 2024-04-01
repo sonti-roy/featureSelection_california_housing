@@ -182,7 +182,7 @@ Table - Top 10 model with different dataset.
 
 *The code is is avaiable in a python notebook **<u>model.ipynb</u>**. To view the code please click below*
 
-[*Click here*](https://github.com/sonti-roy/california_housing/blob/main/model.ipynb)
+[*Click here*](https://github.com/sonti-roy/featureSelection_california_housing/blob/main/model.ipynb)
 
 ## Roadmap
 
