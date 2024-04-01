@@ -49,7 +49,16 @@ Mutual information (MI) between two random variables is a non-negative value, wh
 
 ![alt text](https://github.com/sonti-roy/featureSelection_california_housing/blob/main/plots/mutual_info_regression_comparasion.png)
 
-Fig - The plot show the dependency of target on each feature. 
+Fig - 1 - The plot show the dependency of target on each feature. 
+
+Top 60% of the features were selected and evaluated for it accuracy with all features dataset using Linear regression.
+
+| Dataset                    | R2       | MSE      |
+|----------------------------|----------|----------|
+| Original                   | 0.5827018886341137| 0.5468311917368283 |
+| subset                     | 0.5732648513884984 | 0.5591975700714763 |
+
+
 
 ## Model fitting and evaluation
 
