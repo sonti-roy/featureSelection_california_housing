@@ -1,8 +1,7 @@
 ![alt text](https://github.com/sonti-roy/california_housing/blob/main/plots/logo.png)
 
 
-# Project Title
-**Feature Selection using supervised and unsupervised method and model development on california housing dataset**
+# Feature Selection using supervised and unsupervised method and model development on california housing dataset
 
 
 ## Implementation Details
