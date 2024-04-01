@@ -6,7 +6,7 @@
 
 ## Implementation Details
 
-- Dataset: California Housing Dataset (view below for more details)
+- Dataset: [California Housing Dataset](https://scikit-learn.org/stable/datasets/real_world.html#california-housing-dataset) (view below for more details)
 - Feature selection methods:
     - Supervised feature selection
         - [mutual info regression](https://scikit-learn.org/stable/modules/generated/sklearn.feature_selection.mutual_info_regression.html)
